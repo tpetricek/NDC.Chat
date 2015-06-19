@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="c:\Tomas\Materials\Talks\2015\end-to-end-web\ndc\code-start\chat\tests\bin\Release\Chat.Tests.dll" total="4" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-06-19" time="01:22:51">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="c:\Tomas\Materials\Talks\2015\end-to-end-web\ndc\code-start\chat" machine-name="MAGRAT" user="Tomas" user-domain="MAGRAT" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="c:\Tomas\Materials\Talks\2015\end-to-end-web\ndc\code-start\chat\tests\bin\Release\Chat.Tests.dll" executed="True" result="Failure" success="False" time="0.824" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="ChatTests" executed="True" result="Failure" success="False" time="0.804" asserts="0">
+        <results>
+          <test-case name="ChatTests.Requesting &quot;/&quot; returns HTTP 200" executed="True" result="Success" success="True" time="0.142" asserts="2" />
+          <test-case name="ChatTests.Requesting &quot;/chat&quot; via GET returns HTTP 200" executed="True" result="Failure" success="False" time="0.018" asserts="1">
+            <failure>
+              <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[at ChatTests.Requesting "/chat" via GET returns HTTP 200() in c:\Tomas\Materials\Talks\2015\end-to-end-web\ndc\code-start\chat\tests\Tests.fs:line 20
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case name="ChatTests.Requesting &quot;/chat&quot; via POST returns HTTP 404" executed="True" result="Failure" success="False" time="0.003" asserts="1">
+            <failure>
+              <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[at ChatTests.Requesting "/chat" via POST returns HTTP 404() in c:\Tomas\Materials\Talks\2015\end-to-end-web\ndc\code-start\chat\tests\Tests.fs:line 28
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case name="ChatTests.Roundtripping does not lose messages" executed="True" result="Success" success="True" time="0.618" asserts="2" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
